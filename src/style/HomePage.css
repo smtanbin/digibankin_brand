@@ -1,0 +1,12 @@
+/* Add your animation styles here */
+.whats-new-container {
+  transition: transform 0.3s ease-in-out;
+}
+
+.whats-new-container.show {
+  transform: translateY(0);
+}
+
+.whats-new-container.hide {
+  transform: translateY(-100%);
+}
