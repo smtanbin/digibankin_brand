@@ -19,7 +19,9 @@ const SideNav = () => {
                 <ul className="nav">
                     <li className="nav-item">
                         <Link to={`/`}>{language ? "Home" : "হোম"}</Link>
-
+                    </li>
+                    <li className="nav-item">
+                        <Link to={`/About`}>{language ? "About" : "সম্পর্কিত"}</Link>
                     </li>
                     <li className="nav-item active">
                         <h5 style={{ color: "#056839" }}>{language ? "Self Service" : "স্ব সেবা"}</h5>
