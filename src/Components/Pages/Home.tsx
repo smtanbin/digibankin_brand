@@ -1,16 +1,16 @@
 import Hero from "../Hero";
 import WhatsNew from "../WhatsNew";
-import SelfReg from "./SelfReg";
 
-const HomePage: React.FC<{ isEnglish: boolean }> = ({ isEnglish }) => {
+
+const HomePage: React.FC = () => {
 
 
     return (
 
         <div style={{ marginLeft: "5%", marginRight: "5%" }}>
+
             <Hero />
-            <WhatsNew isEnglish={isEnglish} />
-            <SelfReg isEnglish={isEnglish} />
+            <WhatsNew />
         </div>
 
     );

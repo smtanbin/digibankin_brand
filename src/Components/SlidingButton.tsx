@@ -1,9 +1,15 @@
+import { useContext } from "react";
+import { LanguageContext } from "../Context/languageProvider";
 
 
-const SlidingButton: React.FC<{ isEnglish: boolean; setIsEnglish: (arg0: () => boolean) => void }> = ({ isEnglish, setIsEnglish }) => {
+const SlidingButton: React.FC = () => {
+
+
+
+    const { language, setLanguage } = useContext(LanguageContext);
 
     const toggleLanguage = () => {
-        setIsEnglish(() => !isEnglish);
+        setLanguage(!language);
     };
 
     const buttonStyles = {
@@ -15,27 +21,19 @@ const SlidingButton: React.FC<{ isEnglish: boolean; setIsEnglish: (arg0: () => b
         cursor: 'pointer',
         transition: 'background-color 0.3s ease',
         borderRadius: '5px',
-    };
-
-    const englishStyles = {
-        ...buttonStyles,
         borderTopLeftRadius: '5px',
         borderBottomLeftRadius: '5px',
     };
 
-    const banglaStyles = {
-        ...buttonStyles,
-        borderTopRightRadius: '5px',
-        borderBottomRightRadius: '5px',
-    };
+
 
     return (
         <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '20px' }}>
             <button
-                style={isEnglish ? englishStyles : banglaStyles}
+                style={buttonStyles}
                 onClick={toggleLanguage}
             >
-                {isEnglish ? 'English' : 'বাংলা'}
+                {language ? 'English' : 'বাংলা'}
             </button>
         </div>
     );

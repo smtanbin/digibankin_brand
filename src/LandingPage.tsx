@@ -1,17 +1,29 @@
-import { useState } from "react";
-import HomePage from "./Components/Pages/Home";
 import Navbar from "./Components/Ux/Navbar";
+import { Outlet } from "react-router-dom";
+import SideNav from "./Components/Ux/SideNav";
 
 
-const LandingPage: React.FC = () => {
 
-  const [isEnglish, setIsEnglish] = useState(true);
+
+
+const LandingPage = () => {
+
+
   return (
-    <>
-      <Navbar isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
-      <HomePage isEnglish={isEnglish} />
-    </>
-  )
-}
+    <main>
+      <Navbar />
 
-export default LandingPage
+      <div className="columns col-gapless">
+        <div className="column col-3 hide-sm"><SideNav /></div>
+        <div className="column col-9 col-sm-12">
+
+          <Outlet />
+        </div>
+      </div>
+
+
+    </main>
+  );
+};
+
+export default LandingPage;
