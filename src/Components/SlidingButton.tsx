@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { LanguageContext } from "../Context/languageProvider";
+import "../style/switch.css"
 
 
 const SlidingButton: React.FC = () => {
@@ -12,31 +13,29 @@ const SlidingButton: React.FC = () => {
         setLanguage(!language);
     };
 
-    const buttonStyles = {
-        backgroundColor: '#50C878',
-        color: '#000',
-        border: 'none',
-        padding: '10px 20px',
-        fontSize: '16px',
-        cursor: 'pointer',
-        transition: 'background-color 0.3s ease',
-        borderRadius: '5px',
-        borderTopLeftRadius: '5px',
-        borderBottomLeftRadius: '5px',
-    };
-
-
 
     return (
+
         <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '20px' }}>
-            <button
-                style={buttonStyles}
-                onClick={toggleLanguage}
-            >
-                {language ? 'English' : 'বাংলা'}
-            </button>
+
+
+            <div className="checkbox-wrapper-35">
+                <input onClick={toggleLanguage} className="switch" type="checkbox" id="switch" name="switch" value="private" />
+                <label htmlFor="switch">
+                    <span className="switch-x-text">Language is </span>
+                    <span className="switch-x-toggletext">
+                        <span className="switch-x-unchecked"><span className="switch-x-hiddenlabel">Unchecked: </span>Eng</span>
+                        <span className="switch-x-checked"><span className="switch-x-hiddenlabel">Checked: </span>বাং</span>
+                    </span>
+                </label>
+            </div>
+
         </div>
     );
 };
 
 export default SlidingButton;
+
+
+
+

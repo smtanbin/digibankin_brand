@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { LanguageContext } from '../../Context/languageProvider';
+
 
 interface ModelData {
     title: string;
@@ -18,6 +20,8 @@ interface SideNavigationProps {
 }
 
 const SideNavigation: React.FC<SideNavigationProps> = ({ data }) => {
+
+    const { language } = useContext(LanguageContext);
 
 
     return (
@@ -45,6 +49,7 @@ const SideNavigation: React.FC<SideNavigationProps> = ({ data }) => {
                                     {template.title}
                                 </ScrollLink> </li>
                         ))}
+
                         <li className="nav-item p-1" key={"Contact_Us"}>
 
                             <ScrollLink
@@ -55,12 +60,14 @@ const SideNavigation: React.FC<SideNavigationProps> = ({ data }) => {
                                 offset={-5}
                                 duration={1000}
                             >
-                                {"Contact Us"}
+                                {language ? "Contact Us" : "যোগাযোগ"}
                             </ScrollLink>
 
                         </li>
                     </ul>
+
                 </div>
+
             </div>
 
         </nav>

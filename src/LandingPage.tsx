@@ -4,7 +4,7 @@ const Navbar = lazy(() => import('./Components/Ux/Navbar'));
 import { useContext } from "react";
 import { LanguageContext } from "./Context/languageProvider";
 import StaticData from './StaticData';
-import Navigation from './Components/Ux/Navigation';
+import Navigation from './Components/Ux/MobileNavigation';
 import Footer from './Components/Pages/Footer';
 
 // Components
@@ -45,7 +45,7 @@ const LandingPage = () => {
 
     <Suspense fallback={<div className="loading loading-lg"></div>}>
       <Navbar />
-      {/* small Screen */}
+
       <div className="off-canvas show-sm">
         <div id="sidebar-id" className="off-canvas-sidebar">
           <Navigation data={templates} />

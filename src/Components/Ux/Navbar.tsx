@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
             <header
                 className="navbar show-sm p-fixed"
                 style={{
-                    boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+                    // boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
                     width: '100vw',
                     backgroundColor: 'rgba(185, 233, 198, 0.2)',
                     color: 'black',
