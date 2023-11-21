@@ -18,6 +18,8 @@ interface SideNavigationProps {
 }
 
 const SideNavigation: React.FC<SideNavigationProps> = ({ data }) => {
+
+
     return (
         <nav>
             <div className="hide-sm">
@@ -37,12 +39,26 @@ const SideNavigation: React.FC<SideNavigationProps> = ({ data }) => {
                                     to={template.title.toString().replace(/\s+/g, '_').toLocaleLowerCase()}
                                     spy={true}
                                     smooth={true}
-                                    offset={-5} // Adjust the offset if you have a fixed navbar
+                                    offset={-50} // Adjust the offset if you have a fixed navbar
                                     duration={1000}
                                 >
                                     {template.title}
                                 </ScrollLink> </li>
                         ))}
+                        <li className="nav-item p-1" key={"Contact_Us"}>
+
+                            <ScrollLink
+                                activeClass="active"
+                                to={"Contact_Us"}
+                                spy={true}
+                                smooth={true}
+                                offset={-5}
+                                duration={1000}
+                            >
+                                {"Contact Us"}
+                            </ScrollLink>
+
+                        </li>
                     </ul>
                 </div>
             </div>

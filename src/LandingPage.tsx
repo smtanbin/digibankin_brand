@@ -72,7 +72,7 @@ const LandingPage = () => {
               <Template key={index} data={template} />
             ))}
           </div>
-          <Footer />
+          <Footer Contact_Us />
         </div>
       </div>
 

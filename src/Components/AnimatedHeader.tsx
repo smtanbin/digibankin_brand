@@ -29,7 +29,7 @@ const AnimatedHeader = ({ text }: any) => {
 
 const HoverZoomImage = styled.img`
   transition: transform 0.3s ease-in-out;
-  // aspect-ratio: 4 / 3; 
+  aspect-ratio: 4 / 3; 
   width: 100%; /* Take full width */
   object-fit: cover; /* Crop the image while maintaining its aspect ratio */
 
