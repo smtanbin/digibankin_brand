@@ -6,11 +6,13 @@ import SlidingButton from "../SlidingButton";
 import '../../style/Navbar.css'; // Import the CSS file for styling
 
 
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Navbar: React.FC = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
     const [visible, setVisible] = useState(true);
-    let scrollTimeout: number | undefined;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let scrollTimeout: any;
 
 
 
@@ -24,7 +26,7 @@ const Navbar: React.FC = () => {
         // Clear previous timeout
         clearTimeout(scrollTimeout);
 
-        // Set a new timeout to set visibility to true after 3 seconds of scrolling pause
+
         scrollTimeout = setTimeout(() => {
             setVisible(true);
         }, 3000);
@@ -37,6 +39,9 @@ const Navbar: React.FC = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [prevScrollPos]);
+
+
+
 
     return (
         <div>
@@ -73,7 +78,7 @@ const Navbar: React.FC = () => {
             <header
                 className="navbar show-sm p-fixed"
                 style={{
-                    // boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+
                     width: '100vw',
                     backgroundColor: 'rgba(185, 233, 198, 0.2)',
                     color: 'black',

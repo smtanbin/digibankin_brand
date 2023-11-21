@@ -36,7 +36,7 @@ const SideNavigation: React.FC<SideNavigationProps> = ({ data }) => {
 
                     <ul className="nav">
                         {data.map((template, index) => (
-                            <li className="nav-item p-1">
+                            <li className="nav-item p-1" key={index + Math.random()}>
                                 <ScrollLink
                                     key={index}
                                     activeClass="active"
@@ -53,6 +53,7 @@ const SideNavigation: React.FC<SideNavigationProps> = ({ data }) => {
                         <li className="nav-item p-1" key={"Contact_Us"}>
 
                             <ScrollLink
+                                key={"57bne457"}
                                 activeClass="active"
                                 to={"Contact_Us"}
                                 spy={true}
