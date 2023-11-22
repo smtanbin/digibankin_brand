@@ -63,7 +63,7 @@ const LandingPage = () => {
         <div className="column col-2">
           <SideNavigation data={templates} />
         </div>
-        <div className="column col-10 col-sm-12">
+        <div className="column col-10col-sm-12">
           <div style={{ marginLeft: "5%", marginRight: "5%" }}>
             <Hero />
             <WhatsNew />

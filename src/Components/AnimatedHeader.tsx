@@ -12,7 +12,8 @@ const AnimatedHeader = ({ text }: any) => {
 
   const LinearWipeText = styled.h1`
 
-  background: linear-gradient(to right, #056839, #00bfa5, #D8DF20, #750000,#D8DF20 , #00bfa5 ,#056839 );
+  // background: linear-gradient(to right, #056839, #00bfa5, #D8DF20, #750000,#D8DF20 , #00bfa5 ,#056839 );
+  background: linear-gradient(to right, #106839,  #D8DF20, #750000,#D8DF20 ,#056839 );
   background-size: 200% auto;
   color: #000;
   background-clip: text;

@@ -42,7 +42,7 @@ export interface StaticData {
 const StaticData: StaticData = {
   LoginData: {
     enData: {
-      title: "Login with new Device",
+      title: "Login Add Device",
       greeting: [
         "Customers can log in to SBL Digibanking with any supported device per user per device.",
       ],
@@ -80,7 +80,7 @@ const StaticData: StaticData = {
       end: "congratulations! You have successfully login to the SBL Digibanking app.",
     },
     bnData: {
-      title: "নতুন ডিভাইস দিয়ে লগইন করুন",
+      title: "লগইন নতুন ডিভাইস",
       greeting: [
         "গ্রাহকরা SBL ডিজিব্যাঙ্কিং-এ লগ ইন করতে পারেন যেকোন সমর্থিত ডিভাইস প্রতি ব্যবহারকারী প্রতি ডিভাইসের মাধ্যমে।",
       ],
@@ -118,10 +118,9 @@ const StaticData: StaticData = {
   },
   RegistrationData: {
     enData: {
-      title: "Registration",
+      title: "Self-Registration",
       greeting: [
-        "To register Digi banking app you need a valid Account Number that is not registered to SBL Digibanking.",
-        "Active Mobile Number",
+        "To Register Digi banking app you need a valid Account Number and register Active Mobile Number with Standard Bank.",
       ],
       steps: [
         {
@@ -154,10 +153,10 @@ const StaticData: StaticData = {
       end: "Congratulations! You have successfully registered the SBL Digibanking app.",
     },
     bnData: {
-      title: "নিবন্ধন",
+      title: "স্ব-নিবন্ধন",
       greeting: [
-        "ডিজি ব্যাঙ্কিং অ্যাপ নিবন্ধন করতে আপনার একটি বৈধ অ্যাকাউন্ট নম্বর প্রয়োজন যা SBL ডিজিব্যাঙ্কিং-এ নিবন্ধিত নয়।",
-        "সক্রিয় মোবাইল নম্বরr",
+        "ডিজি ব্যাঙ্কিং অ্যাপ নিবন্ধন করতে আপনার একটি স্ট্যান্ডার্ড ব্যাংকের অ্যাকাউন্ট নম্বর প্রয়োজন যা SBL ডিজিব্যাঙ্কিং-এ নিবন্ধিত নয়।",
+        "সক্রিয় মোবাইল নম্বর",
       ],
       steps: [
         {
@@ -192,7 +191,7 @@ const StaticData: StaticData = {
   },
   ResetData: {
     enData: {
-      title: "Change Password",
+      title: "Forget User or Password",
       greeting: [
         "Customer can reset their password or know their user ID from Digibanking.",
       ],
@@ -227,7 +226,7 @@ const StaticData: StaticData = {
       end: "Congratulations! You will receive your ID and Temporary password via message or email.",
     },
     bnData: {
-      title: "পাসওয়ার্ড পরিবর্তন",
+      title: "ইউজার বা পাসওয়ার্ড পরিবর্তন",
       greeting: [
         "গ্রাহকরা তাদের পাসওয়ার্ড পরিবর্তন করতে পারেন বা ডিজিব্যাঙ্কিং থেকে তাদের ব্যবহারকারী আইডি জানতে পারেন।",
       ],
